@@ -1,0 +1,5 @@
+const { createRequire } = require('module')
+const ctx = process.cwd()
+console.log('cwd', ctx)
+const req = createRequire(ctx)
+req('node-fetch')
